@@ -1,5 +1,6 @@
 This is a simple implementation of sign up/ login system with Firebase integration.
 Note: This repository doesn't consist firebase_key.json file for security concerns.
+Note: home.html is under temlpates directory
 
 Procedure:
 1. Go to https://console.firebase.google.com/ . Click "Add Project" and give the project a name (e.g., user-login-creds)
