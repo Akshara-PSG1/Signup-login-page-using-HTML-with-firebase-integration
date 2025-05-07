@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup / Login Page</title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+
+    {% if message %}
+    <h3>{{ message }}</h3>
+    {% endif %}
+
+    <h2>Signup</h2>
+    <form method="POST" action="/">
+        <input type="hidden" name="action" value="signup">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <input type="submit" value="Signup">
+    </form>
+
+    <h2>Login</h2>
+    <form method="POST" action="/">
+        <input type="hidden" name="action" value="login">
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+
+</html>
